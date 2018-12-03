@@ -1,0 +1,37 @@
+.base {
+  margin: 0.5em;
+  border: none;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 600;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text {
+  padding: 0.75em 1em;
+  border: 1px solid #d4d8e1;
+  border-radius: 6px;
+  /* letter-spacing: 1px; */
+}
+
+.text::placeholder {
+  color: #bcc1cd;
+}
+
+.password {
+  padding: 0.75em 0;
+  border-radius: 0;
+  border-bottom: 2px solid #5953fa;
+  letter-spacing: 8px;
+}
+
+.password::placeholder {
+  color: #bcc1cd;
+}
+
+.disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+}

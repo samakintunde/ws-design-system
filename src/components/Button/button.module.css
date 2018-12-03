@@ -1,0 +1,70 @@
+.base {
+  padding: 1em 2em;
+  margin: 0.5em;
+  border: none;
+  border-radius: 6px;
+  min-width: 6.5em;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.default {
+  color: #666972;
+  border: 1px solid #d4d8e1;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+  box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+}
+
+.default:hover {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+  box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+}
+
+.primary {
+  border: none;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #5a53fc, #5953fa);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+  box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+}
+
+.primary:hover {
+  background-color: #514bfa;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+  box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+}
+
+.danger {
+  border: none;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #e0284f, #de284f);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+  box-shadow: 0px 4px 4px 0px rgba(238, 238, 238, 1);
+}
+
+.danger:hover {
+  background-color: #d62249;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+  box-shadow: 0px 4px 4px 0px rgba(221, 221, 221, 1);
+}
+
+.disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+  box-shadow: none;
+}
+
+.disabled:hover {
+  box-shadow: none;
+}

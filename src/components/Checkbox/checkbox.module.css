@@ -1,0 +1,29 @@
+.base {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #999ca1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.checked {
+  background-color: #514bfa;
+  border: 0;
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+}
+
+.base input[type="checkbox"] {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.checked span {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: url("../../assets/checked.png") center left no-repeat;
+  background-size: cover;
+}

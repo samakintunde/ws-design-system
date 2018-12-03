@@ -1,0 +1,23 @@
+.label {
+  font-weight: 500;
+  margin: 0.5em;
+  width: 100%;
+}
+
+.base {
+  border: 2px solid #d4d8e1;
+  border-radius: 4px;
+  padding: 1em;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 400;
+  outline: none;
+  width: 100%;
+  resize: none;
+  /* overflow: auto; */
+}
+
+.disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+}
