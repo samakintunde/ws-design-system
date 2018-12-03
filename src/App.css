@@ -10,7 +10,7 @@
 .showcase {
   display: flex;
   justify-content: space-around;
-  margin: 1em 0;
+  margin: 1em 0 5em 0;
 }
 
 h1,
@@ -21,4 +21,11 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+h2.showcase-heading {
+  width: 100%;
+  background-color: #cccccccc;
+  text-align: center;
+  padding: 0.25em 0;
 }

@@ -23,8 +23,10 @@
 }
 
 .modal-content {
+  display: flex;
+  flex-flow: column;
   /* padding: 2em; */
-  min-width: 20em;
+  min-width: 30em;
   width: auto;
   max-width: 90%;
   background-color: #ffffff;
@@ -52,15 +54,26 @@
 .label {
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 .footer {
-  width: 100%;
   display: flex;
-  justify-content: end;
   background: linear-gradient(to right, #e9ecef, #f3f5f6, #e9ecef);
   border-radius: 0 0 6px 6px;
   padding: 2em;
+}
+
+.footer-end {
+  justify-content: flex-end;
+}
+
+.footer-space-between {
+  justify-content: space-between;
+}
+
+.footer-center {
+  justify-content: center;
 }
 
 .close-button {

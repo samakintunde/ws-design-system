@@ -1,44 +1,90 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Design System
 
-In the project directory, you can run:
+This project contains some very functional, beautiful and reusable React components. Use them if you want to.
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Button
 
-### `npm test`
+- **Accepted props**
+  | Prop type | Role | Possible values |
+  | --- | --- | ---|
+  | **type** | _Specifies what kind of styling to give button_ | `'primary'`, `'danger'`, `'default'` |
+  | **text** | _Any text you want written on button_ | string |
+  | **disabled** | _If you want the button disabled or not_ | `true`, `false` |
+  | **onClick** | _Function to call when button is clicked_ | `function() {}` |
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Screenshot(s)**
 
-### `npm run build`
+### Toggle
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | --- | ---|
+  |**states**| _An array of two items containing the texts you want in the toggle. Ignore if you want a textless toggle_| array of strings |
+  |**isOn**| _Use a prop or state to set it's value_| `'on'`, `'off'` |
+  |**handleToggle**| _Function that fires once toggle is clicked. Typically, you want to change the state controlling the toggle._| `function() {}`|
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Input
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | --- | ---|
+  |**type**| _Determines the styling and acceptable input of the button_| `'text'`, `'password'`, `'number'` |
+  |**placeholder**| _The text you want displayed in the field until the input is entered_| any text(However, password types do not display placeholders) |
+  |**disabled**| _If you want the input disabled or not_| `true`, `false` |
 
-### `npm run eject`
+### Textarea
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | --- | ---|
+  |**label**| _Appears just above the textarea, letting you know what content the textarea asks_| any text |
+  |**placeholder**| _The text you want displayed in the field until the textarea is entered_| |
+  |**disabled**| _If you want the textarea disabled or not_| `true`, `false` |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Select
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | ---| ---|
+  |**options**| _An array of options you want in the dropdown_ | any array containing string items |
+  |**handleSelect**| _A function to handle selection of an option_ | `function() {}` |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Modal
 
-## Learn More
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | ---| ---|
+  |**title**| _Modal title_ | string |
+  |**isOpen**| _A state or props driven value that controls whether the modal is open or not_ | `true`, `false` |
+  |**handleModal**| _A function that changes the value of state or prop to control the modal_ | `function() {}` |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Checkbox
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | ---| ---|
+  |**isChecked**| _a state or prop driven value that controls whether the checkbox is checked or not_ | `true`, `false` |
+  |**handleCheckbox**| _A function that changes the value of state or prop to control the checkbox_ | `function() {}` |
+
+### Link
+
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | ---| ---|
+  |**location**| _The href of the link_ | string |
+  |**external**| _Whether the link is an external or internal_ | `true`, `false` |
+
+### Composed Modal
+
+- **Accepted Props**
+  | Prop type | Role | Possible values |
+  | --- | ---| ---|
+  |**title**| _Composed Modal title_ | string |
+  |**isComposedModalOpen**| _A state or props driven value that controls whether the composed modal is open or not_ | `true`, `false` |
+  |**handleComposedModal**| _A function that changes the value of state or prop to control the composed modal_ | `function() {}` |

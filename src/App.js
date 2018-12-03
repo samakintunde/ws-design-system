@@ -43,6 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h2 className="showcase-heading">Button</h2>
         <div className="showcase">
           <Button
             text="Primary Button"
@@ -69,6 +70,7 @@ class App extends Component {
             onClick={() => {}}
           />
         </div>
+        <h2 className="showcase-heading">Toggle</h2>
         <div className="showcase">
           <Toggle
             isOn={this.state.toggleOn}
@@ -80,12 +82,14 @@ class App extends Component {
             handleToggle={() => this.handleToggle()}
           />
         </div>
+        <h2 className="showcase-heading">Input</h2>
         <div className="showcase">
-          <Input type="text" placeholder="Enter email address" />
+          <Input type="text" placeholder="Text Input" />
           <Input type="password" />
-          <Input type="number" placeholder="Enter email address" />
+          <Input type="number" placeholder="Number Input" />
           <Input type="text" placeholder="Disabled input" disabled={true} />
         </div>
+        <h2 className="showcase-heading">Textarea</h2>
         <div className="showcase">
           <TextArea label="Message" placeholder="Write a message..." />
           <TextArea
@@ -94,6 +98,7 @@ class App extends Component {
             disabled={true}
           />
         </div>
+        <h2 className="showcase-heading">Select</h2>
         <div className="showcase">
           <Select
             options={["Design Team", "Dev Team"]}
@@ -104,6 +109,7 @@ class App extends Component {
             handleSelect={() => this.handleSelect()}
           />
         </div>
+        <h2 className="showcase-heading">Modal</h2>
         <div className="showcase">
           <Button
             text="Open Modal"
@@ -124,12 +130,14 @@ class App extends Component {
             />
           </Modal>
         </div>
+        <h2 className="showcase-heading">Checkbox</h2>
         <div className="showcase">
           <Checkbox
             isChecked={this.state.checkboxOn}
             handleCheckbox={() => this.handleCheckbox()}
           />
         </div>
+        <h2 className="showcase-heading">Link</h2>
         <div className="showcase">
           <div>
             <Link location="https://witts-stratts.com" external={true}>
@@ -145,6 +153,7 @@ class App extends Component {
             </Link>
           </div>
         </div>
+        <h2 className="showcase-heading">Composed Modal</h2>
         <div className="showcase">
           <Button
             text="Open Composed Modal"
@@ -155,7 +164,7 @@ class App extends Component {
             title="Invite new members"
             iconSrc={composedModalIcon}
             isComposedModalOpen={this.state.composedModalOpen}
-            handleComposedModalOpen={() => this.handleComposedModal()}
+            handleComposedModal={() => this.handleComposedModal()}
           >
             <Input type="email" placeholder="Enter email address" />
           </ComposedModal>

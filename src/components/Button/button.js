@@ -4,22 +4,18 @@ import styles from "./button.module.css";
 
 let cx = classNames.bind(styles);
 
-const Button = props => {
+const Button = ({ text, type, disabled, onClick }) => {
   let className = cx({
     base: true,
-    default: props.type === "default",
-    disabled: props.disabled,
-    danger: props.type === "danger",
-    primary: props.type === "primary"
+    default: type === "default",
+    disabled: disabled,
+    danger: type === "danger",
+    primary: type === "primary"
   });
 
   return (
-    <button
-      className={className}
-      disabled={props.disabled}
-      onClick={() => props.onClick()}
-    >
-      {props.text}
+    <button className={className} disabled={disabled} onClick={() => onClick()}>
+      {text}
     </button>
   );
 };

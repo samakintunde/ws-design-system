@@ -12,7 +12,8 @@ const ComposedModal = ({
   isComposedModalOpen,
   title,
   handleComposedModal,
-  children
+  children,
+  footerAlign
 }) => {
   const overlayClassName = cx({
     base: true,
@@ -22,6 +23,13 @@ const ComposedModal = ({
 
   const contentClassName = cx({
     "modal-content": isComposedModalOpen === true
+  });
+
+  const footerClassName = cx({
+    footer: true,
+    "footer-space-between": footerAlign === "space-between",
+    "footer-center": footerAlign === "center",
+    "footer-end": footerAlign === "end"
   });
 
   return (
@@ -48,7 +56,7 @@ const ComposedModal = ({
             </div>
             {children}
           </div>
-          <div className={styles.footer}>
+          <div className={footerClassName}>
             <Button
               type="danger"
               text="cancel"
