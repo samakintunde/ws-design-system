@@ -1,5 +1,4 @@
 .base {
-  position: relative;
   width: 1em;
   height: 1em;
   border: 1px solid #999ca1;
@@ -8,6 +7,7 @@
 }
 
 .checked {
+  position: relative;
   background-color: #514bfa;
   border: 0;
   width: calc(1em + 2px);
@@ -20,10 +20,23 @@
   margin: 0;
 }
 
-.checked span {
+.checkmark {
+  position: absolute;
+  width: 0.75em;
+  height: 0.75em;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: url("../../assets/checked.png") center left no-repeat;
+  background-size: cover;
+}
+
+.checkmark-off {
   position: absolute;
   width: 1em;
   height: 1em;
-  background: url("../../assets/checked.png") center left no-repeat;
-  background-size: cover;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: none;
 }

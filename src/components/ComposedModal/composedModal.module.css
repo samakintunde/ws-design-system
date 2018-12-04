@@ -39,54 +39,6 @@
   box-shadow: 0px 0px 12px 8px #555555aa;
 }
 
-.main {
-  padding: 2em;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #333333;
-}
-
-.label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1em;
-}
-
-.footer {
-  display: flex;
-  background: linear-gradient(to right, #e9ecef, #f3f5f6, #e9ecef);
-  border-radius: 0 0 6px 6px;
-  padding: 2em;
-}
-
-.footer-end {
-  justify-content: flex-end;
-}
-
-.footer-space-between {
-  justify-content: space-between;
-}
-
-.footer-center {
-  justify-content: center;
-}
-
-.close-button {
-  font-size: 2em;
-  color: #888888;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.close-button:hover {
-  color: #666666;
-}
-
 @keyframes modal {
   0% {
     transform: scale(0.8);

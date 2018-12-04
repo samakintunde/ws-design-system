@@ -1,0 +1,18 @@
+.base {
+  display: flex;
+  background: linear-gradient(to right, #e9ecef, #f3f5f6, #e9ecef);
+  border-radius: 0 0 6px 6px;
+  padding: 0.75em 1em;
+}
+
+.footer-end {
+  justify-content: flex-end;
+}
+
+.footer-space-between {
+  justify-content: space-between;
+}
+
+.footer-center {
+  justify-content: center;
+}

@@ -1,7 +1,7 @@
 .base {
   display: inline-block;
   width: max-content;
-  font-size: 1em;
+  font-size: 0.85em;
   color: #008ae3;
   text-decoration: none;
 }

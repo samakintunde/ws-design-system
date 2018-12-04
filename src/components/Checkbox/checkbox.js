@@ -11,10 +11,19 @@ const Checkbox = ({ handleCheckbox, isChecked }) => {
     checked: isChecked === true
   });
 
+  const checkmarkClassName = cx({
+    checkmark: isChecked === true,
+    "checkmark-off": isChecked !== true
+  });
+
   return (
     <label className={checkboxClassName} onClick={() => handleCheckbox()}>
-      <input className={styles.base} type="checkbox" />
-      <span />
+      <input
+        className={styles.base}
+        type="checkbox"
+        onClick={() => handleCheckbox()}
+      />
+      <span className={checkmarkClassName} onClick={() => handleCheckbox()} />
     </label>
   );
 };

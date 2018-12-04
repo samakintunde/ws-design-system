@@ -11,7 +11,11 @@
 }
 
 .primary {
-  background: #5473eb;
+  background: #e4e3ff;
+}
+
+.danger {
+  background: #f6e1e4;
 }
 
 .base img {

@@ -8,6 +8,11 @@ import Modal from "./components/Modal/modal";
 import Checkbox from "./components/Checkbox/checkbox";
 import Link from "./components/Link/link";
 import ComposedModal from "./components/ComposedModal/composedModal";
+import Icon from "./components/Icon/icon";
+import ModalHeader from "./components/ComposedModal/modal-header";
+import ModalLabel from "./components/ComposedModal/modal-label";
+import ModalBody from "./components/ComposedModal/modal-body";
+import ModalFooter from "./components/ComposedModal/modal-footer";
 
 import "./App.css";
 import composedModalIcon from "./assets/error.png";
@@ -161,12 +166,46 @@ class App extends Component {
             onClick={() => this.handleComposedModal()}
           />
           <ComposedModal
-            title="Invite new members"
-            iconSrc={composedModalIcon}
             isComposedModalOpen={this.state.composedModalOpen}
             handleComposedModal={() => this.handleComposedModal()}
           >
-            <Input type="email" placeholder="Enter email address" />
+            <ModalHeader>
+              <ModalLabel>
+                <Icon src={composedModalIcon} alt="error" type="danger" />
+                <h3>Invite new members</h3>
+              </ModalLabel>
+
+              <span
+                style={{
+                  fontSize: "2em",
+                  color: "#888888",
+                  cursor: "pointer",
+                  transition: "0.2s"
+                }}
+                onClick={() => this.handleComposedModal()}
+              >
+                &times;
+              </span>
+            </ModalHeader>
+            <ModalBody>
+              <p>Enter your email address below</p>
+              <Input type="email" placeholder="Enter email address" />
+              <Link location="#" external={false}>
+                Read our privacy policy
+              </Link>
+            </ModalBody>
+            <ModalFooter align="end">
+              <Button
+                type="danger"
+                text="cancel"
+                onClick={() => this.handleComposedModal()}
+              />
+              <Button
+                type="primary"
+                text="save"
+                onClick={() => this.handleComposedModal()}
+              />
+            </ModalFooter>
           </ComposedModal>
         </div>
       </div>
