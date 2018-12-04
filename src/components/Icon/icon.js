@@ -9,7 +9,8 @@ const Icon = ({ alt, src, type }) => {
   const className = cx({
     base: true,
     primary: type === "primary",
-    danger: type === "danger"
+    danger: type === "danger",
+    secondary: type === "secondary",
   });
 
   return (
